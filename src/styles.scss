@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+.card .p-card-body {
+  padding: 0 !important;
+}
+.card .p-card .p-card-content {
+  padding: 0 !important;
+}
+.p-divider.p-divider-horizontal {
+  padding: 10px !important;
+  margin: 0 !important;
+}

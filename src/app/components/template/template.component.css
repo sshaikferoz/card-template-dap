@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  padding-top: 10px;
+  gap: 1rem;
+  align-items: center;
+}
+
+.status-header {
+  flex: 0.25;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.grid1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.col1 {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.5rem;
+}
+
+.status-txt {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px 5px 0px;
+  color: white;
+}
+
+.item-header {
+  font-weight: 400;
+  color: black;
+  font-size: 14px;
+}
+
+.item-content {
+  color: black;
+  font-size: 14px;
+  font-weight: lighter;
+}

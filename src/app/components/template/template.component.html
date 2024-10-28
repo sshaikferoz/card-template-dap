@@ -1,0 +1,134 @@
+<p-card class="card" [style]="{ width: '100%', border: '0.5px solid #c1c1c1' }">
+  <ng-template pTemplate="header">
+    <div class="header">
+      <div
+        [ngStyle]="{ 'background-color': header.bg_color }"
+        class="status-header"
+      >
+        <span class="status-txt">{{ header.title }}</span>
+      </div>
+      <div>
+        <span>{{ header.sub_txt }}</span>
+      </div>
+    </div>
+    <p-divider />
+  </ng-template>
+  <div class="grid1" style="padding-left: 5px">
+    <div class="col" *ngFor="let item of content">
+      <div class="flex flex-column gap-2">
+        <div>
+          <span class="item-header">{{ item.label }}</span>
+        </div>
+        <div>
+          <span class="item-content">{{ item.field || "-" }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="grid1" style="padding-left:5px">
+        <div class="col">
+            <div class="flex flex-column gap-2">
+                <div>
+                    <span class="item-header">
+                        Project Code
+                    </span>
+                </div>
+                <div>
+                    <span class="item-content">
+                        PR/KTSIT/3897
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="flex flex-column gap-2">
+                <div>
+                    <span class="item-header">
+                        Overall value
+                    </span>
+                </div>
+                <div>
+                    <span class="item-content">
+                        -
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="flex flex-column gap-2">
+                <div>
+                    <span class="item-header">
+                        Collected Value
+                    </span>
+                </div>
+                <div>
+                    <span class="item-content">
+                       -
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="flex flex-column gap-2">
+                <div>
+                    <span class="item-header">
+                        Ar value
+                    </span>
+                </div>
+                <div>
+                    <span class="item-content">
+                        -
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="flex flex-column gap-2">
+                <div>
+                    <span class="item-header">
+                        Project Manager
+                    </span>
+                </div>
+                <div>
+                    <span class="item-content">
+                        -
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="flex flex-column gap-2">
+                <div>
+                    <span class="item-header">
+                        Service Type
+                    </span>
+                </div>
+                <div>
+                    <span class="item-content">
+                        -
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="col1">
+             <div class="flex flex-column gap-2">
+                <div>
+                    <span class="item-header">
+                        Item Status
+                    </span>
+                </div>
+                <div>
+                    <span class="item-content">
+                        -
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+</p-card>
